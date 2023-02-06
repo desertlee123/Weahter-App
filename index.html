@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/weather-icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main class="container">
+      <form id="form" class="form">
+        <input
+          type="search"
+          name="search"
+          class="form__input"
+          placeholder="Escribe el nombre de una ciudad"
+        />
+        <small class="form__error form__error--hidden" id="error-message"
+          >Ciudad no encontrada!</small
+        >
+        <input
+          type="submit"
+          name="submit"
+          class="form__submit"
+          value="Ver clima"
+        />
+      </form>
+      <div class="spinner spinner--hidden"></div>
+      <section class="boxes">
+        <div class="box box--hidden box--1"></div>
+        <div class="box box--hidden box--2"></div>
+        <div class="box box--hidden box--3"></div>
+      </section>
+    </main>
+  </body>
+</html>
